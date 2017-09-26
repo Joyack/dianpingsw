@@ -1,0 +1,8 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <injection language="JavaScript 1.8" injector-id="xml">
+      <display-name>property/@name</display-name>
+      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("name")).withParent(xmlTag().withLocalName(string().equalTo("property")).withNamespace(string().equalTo("http://www.springframework.org/schema/beans")))]]></place>
+    </injection>
+  </component>
+</application>
