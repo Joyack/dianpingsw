@@ -17,7 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 
-//标注为一个Spring mvc的Controller
 @Controller
 public class LoginController {
 
@@ -29,7 +28,7 @@ public class LoginController {
         this.loginService = loginService;
     }
 
-    //负责处理login.html请求
+
     @RequestMapping(value = {"/","/login.html"})
     public String toLogin(HttpServletRequest request){
         request.getSession().invalidate();
@@ -68,7 +67,7 @@ public class LoginController {
                     res.put("msg","读者登陆成功！");
                 }
         return res;
-    };
+    }
     @RequestMapping("/admin_main.html")
     public ModelAndView toAdminMain(HttpServletResponse response) {
 
@@ -112,9 +111,9 @@ public class LoginController {
             redirectAttributes.addFlashAttribute("error", "旧密码错误！");
             return "redirect:/admin_repasswd.html";
         }
-    };
+    }
 
-    //配置404页面
+
      @RequestMapping("*")
      public String notFind(){
      return "404";

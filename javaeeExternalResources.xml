@@ -1,6 +1,0 @@
-<application>
-  <component name="ExternalResourceManagerImpl">
-    <resource url="http://www.springframework.org/schema/beans/spring-beans.xsd" location="$USER_HOME$/.IntelliJIdea2017.2/system/extResources/334543e7_spring-beans.xsd" />
-    <ignored-resource url="http://xmlns.jcp.org/xml/ns/javaee" />
-  </component>
-</application>

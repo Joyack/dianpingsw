@@ -15,8 +15,7 @@ public class ApiController
     public List<Ad> homead(){
 
         ObjectMapper mapper = new ObjectMapper();
-        String s
 
-                retu
+        return null;
     }
 }
